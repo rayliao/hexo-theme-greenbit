@@ -3,13 +3,17 @@
 
 .post-block
   .post-title
-    margin 0.65em 0
-    color var(--on-background-color)
-    font-size 1.5em
-
+    margin 0
+    margin-bottom 5px
+    font-size 22px
+  .post-title-link
+    color var(--primary-color)
+    &:hover
+      background-color var(--primary-color)
+      color var(--on-primary-color)
   .post-info
     color var(--light-color)
-    margin 1.2em 0
+    margin-bottom 15px
 
     span
       margin-left 0.5rem
@@ -24,31 +28,20 @@
 
   .post-tag
     margin-left 5px
-    color var(--primary-color)
-
+    color var(--light-color)
+    &:hover
+      color var(--primary-color)
+      
 .post-content
   h2, h3, h4, h5, h6
     position relative
     margin 1em 0
 
-    a:before
-      content '#'
-      color var(--primary-color)
-      position absolute
-      left -0.7em
-      top -4px
-      font-size 1.2em
-      font-weight bold
-
-  h4, h5, h6
-    a:before
-      content ''
-
   h2, h3
-    font-size 22px
+    font-size 18px
 
   h4, h5, h6
-    font-size 18px
+    font-size 16px
 
   a
     color var(--primary-color)

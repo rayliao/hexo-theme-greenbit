@@ -23,13 +23,13 @@
       <footer>
         <%- partial('_partial/paginator') %>
         <div class="copyright">
-          <% var hexoURL = "https://hexo.io/"; var greenbitURL =
-          "https://github.com/rayliao/hexo-theme-greenbit"; var currentDate = new
-          Date(); var year = currentDate.getFullYear(); year = year ==
-          theme.startyear ? year : theme.startyear + ' - ' + year; %>
+          <% 
+            var greenbitURL = "https://github.com/rayliao/hexo-theme-greenbit";
+            var currentDate = new Date();
+            var year = currentDate.getFullYear();
+            year = year == theme.startyear ? year : theme.startyear + ' - ' + year; %>
           <p>
-            © <%= year %> <a href="<%- config.url %>"><%= config.author%></a>,
-            powered by <a href="<%- hexoURL %>" target="_blank">Hexo</a> and
+            © <%= year %> powered by <a href="https://hexo.io/" target="_blank">hexo</a> and
             <a href="<%- greenbitURL %>" target="_blank">hexo-theme-greenbit</a>.
           </p>
         </div>

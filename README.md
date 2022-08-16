@@ -1,4 +1,8 @@
-### 🚗 Install
+### GreenBit
+
+🌿 A green, pure and nice [Hexo](https://www.hexo.io) theme for a personal blog, base on [apollo](https://github.com/pinggod/hexo-theme-apollo) and [geist-ui](https://github.com/geist-org/geist-ui).
+
+### Install
 
 ```bash
 hexo init Blog
@@ -8,7 +12,7 @@ npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap
 git clone https://github.com/rayliao/hexo-theme-greenbit.git themes/greenbit
 ```
 
-### 😊 Start
+### Start
 
 Modify the `theme` configuration item of `_config.yml` to `greenbit`:
 
@@ -24,13 +28,13 @@ archive_generator:
   daily: false
 ```
 
-### 🚀 Update
+### Update
 
 ```bash
 cd themes/greenbit
 git pull
 ```
 
-### ⚖️ License
+### License
 
 MIT

@@ -1,8 +1,8 @@
 <div class="post-info">
     <%= full_date(item.date, 'll') %>
     <% if(item.tags && item.tags.length) { %>
-    <% item.tags.each(function(tag) { %>
-    <a href="<%- url_for(tag.path) %>" class="post-tag">#<%= tag.name %></a>
-    <% }) %>
+        <% item.tags.each(function(tag) { %>
+            <a href="<%- url_for(tag.path) %>" class="post-tag">#<%= tag.name %></a>
+        <% }) %>
     <% } %>
 </div>

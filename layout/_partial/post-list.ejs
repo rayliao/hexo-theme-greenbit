@@ -6,10 +6,12 @@
                 <a href="<%- url_for(item.path) %>" class="post-title-link"><%= item.title %></a>
             </h2>
             <%- partial('post-info', {item: item}) %>
-            <div class="post-content">
-                <%- item.excerpt %>
-            </div>
-            <a href="<%- url_for(item.path) %>" class="read-more">...more</a>
+            <% if (item.excerpt) { %> 
+                <div class="post-content">
+                    <%- item.excerpt %>
+                </div>
+                <a href="<%- url_for(item.path) %>" class="read-more">...more</a>
+            <% } %> 
         </article>
     </li>
     <% }) %>

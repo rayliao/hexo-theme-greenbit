@@ -1,20 +1,17 @@
 .home.post-list
     margin 2em 0
-
     .post-list-item
-        padding 1em 0 2em
-        border-bottom 1px solid var(--border-color)
-
-        &:last-child
-            border-bottom 0px
-
+        padding-bottom 20px
+    .post-block
+        .post-title
+            font-weight normal
     .post-content
         h2, h3, h4, h5, h6
-            &:before
-                content ''
-
+            font-size 16px
+            font-weight normal
         & > ul
             list-style initial
-
     .read-more
         color var(--primary-color)
+        &:hover
+            border-bottom 1px solid var(--primary-color)
