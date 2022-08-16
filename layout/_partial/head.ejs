@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" , content="IE=edge">
+<%
+  var title = page.title;
+
+  if (is_archive()){
+    title = 'Archives';
+
+    if (is_month()){
+      title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()){
+      title += ': ' + page.year;
+    }
+  } else if (is_category()){
+    title = 'Category: ' + page.category;
+  } else if (is_tag()){
+    title = 'Tag: ' + page.tag;
+  }
+  %>
+<title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+<% if(config.description){ %>
+<meta name="description" content="<%- config.description %>">
+<% } %>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+<%- css('css/style') %>

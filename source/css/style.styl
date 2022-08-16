@@ -1,0 +1,24 @@
+@import '_partial/_normalize'
+@import '_partial/_base'
+@import '_partial/_header'
+@import '_partial/_home-post-list'
+@import '_partial/_archive-post-list'
+@import '_partial/_post'
+@import '_partial/_footer'
+@import '_partial/_mq'
+@import '_partial/_copyright'
+
+@font-face
+  font-family 'sourcesanspro'
+  src url('../font/sourcesanspro.woff2') format('woff2'), url('../font/sourcesanspro.woff') format('woff')
+  font-weight normal
+  font-style normal
+
+@media screen and (prefers-color-scheme dark)
+  html
+    --background-color: #1d1f21
+    --on-background-color: #c9cacc
+    --border-color: #908d8d
+    --secondary-color hsl($secondary-hue, 5%, 25%)
+    --on-secondary-normal hsl($secondary-hue, 5%, 75%)
+    --on-secondary-light hsl($secondary-hue, 5%, 45%)

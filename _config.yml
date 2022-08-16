@@ -1,0 +1,17 @@
+menu:
+  archives: /archives
+  projects: https://github.com/rayliao
+  rss: /atom.xml
+
+# Comment
+# e.g disqus: greenbit
+disqus:
+duoshuo:
+gitalk:
+
+# Analytics
+# google-analytics:
+# ga: UA-xxxxxxxx-x
+
+# Copyright Infomation
+startyear: 2016

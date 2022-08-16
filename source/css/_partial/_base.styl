@@ -1,0 +1,92 @@
+$hue = 153
+$secondary-hue = 27
+
+html
+  --background-color: #1d1f21
+  --on-background-color: #c9cacc
+  --primary-color: #2bbc8a
+  --on-primary-color: hsl($hue, 5%, 95%)
+  --primary-hover-color: hsl($hue, 55%, 35%)
+  --light-color: hsl($hue, 5%, 65%)
+  --light-hover-color: hsl($hue, 5%, 60%)
+  --dark-color: hsl($hue, 53%, 32%)
+  --border-color: #908d8d
+  --secondary-color: hsl($secondary-hue, 15%, 95%)
+  --on-secondary-normal: hsl($secondary-hue, 5%, 25%)
+  --on-secondary-primary: hsl($secondary-hue, 95%, 45%)
+  --on-secondary-light: hsl($secondary-hue, 5%, 65%)
+
+::selection
+  color: var(--on-background-color)
+  background-color: var(--background-color)
+
+html, body
+  width: 100%
+  height: 100%
+
+body
+  margin: 0
+  color: var(--on-background-color)
+  font-size: 14px
+  line-height: 1.6
+  background-color: var(--background-color)
+  font-family: 'sourcesanspro', 'Helvetica Neue', Arial, sans-serif
+
+ul.nav, ul.post-list
+  margin: 0
+  padding: 0
+  list-style-type: none
+
+ul
+  margin: 1rem 0
+
+a, a:active
+  color: var(--on-background-color)
+  text-decoration: none
+
+a.nav-list-link.active, a.nav-list-link:hover, a.post-title-link:hover
+  border-bottom: 2px solid var(--primary-color)
+
+hr
+  border: 0
+
+code
+  margin: 0 2px
+  padding: 3px 5px
+  color: var(--on-secondary-primary)
+  border-radius: 2px
+  white-space: inherit
+
+iframe, video
+  max-width: 100%
+  margin: 1rem auto
+  display: block
+
+table
+  width: 100%
+  margin: 1em auto
+
+  thead
+    background-color: #ddd
+
+    th
+      padding: 5px
+      min-width: 20px
+
+  tbody
+    tr:nth-child(2n)
+      background-color: #eee
+
+    td
+      padding: 5px
+      vertical-align: text-top
+
+.gt-container .gt-header-textarea
+  color: #242826
+
+main.container
+  margin 2em 10px
+
+.wrap
+  width 700px
+  margin 0 auto

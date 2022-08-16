@@ -1,0 +1,25 @@
+{
+  "name": "hexo-theme-greenbit",
+  "version": "1.0.0",
+  "description": "A hexo theme inspired by vuejs.org",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rayliao/hexo-theme-greenbit"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "greenbit"
+  ],
+  "author": "Ray Liao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rayliao/hexo-theme-greenbit/issues"
+  },
+  "homepage": "https://github.com/rayliao/hexo-theme-greenbit#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2"
+  }
+}

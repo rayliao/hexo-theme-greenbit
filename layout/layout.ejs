@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="<%- config.language %>">
+  <head>
+    <%- partial('_partial/head') %>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <a href="<%- url_for() %>" class="logo">
+          <span class="title">
+            <%- config.title %> 
+          </span>
+          <span class="sub">
+            <%- config.subtitle %> 
+          </span>
+        </a>
+        <%- partial('_partial/nav') %>
+      </header>
+      <main class="container">
+        <%- body %>
+      </main>
+      <footer>
+        <%- partial('_partial/paginator') %>
+        <div class="copyright">
+          <% var hexoURL = "https://hexo.io/"; var greenbitURL =
+          "https://github.com/rayliao/hexo-theme-greenbit"; var currentDate = new
+          Date(); var year = currentDate.getFullYear(); year = year ==
+          theme.startyear ? year : theme.startyear + ' - ' + year; %>
+          <p>
+            © <%= year %> <a href="<%- config.url %>"><%= config.author%></a>,
+            powered by <a href="<%- hexoURL %>" target="_blank">Hexo</a> and
+            <a href="<%- greenbitURL %>" target="_blank">hexo-theme-greenbit</a>.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

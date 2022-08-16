@@ -1,0 +1,18 @@
+<ul class="nav nav-list">
+  <% for (var key in theme.menu) { %>
+  <% 
+    var value = theme.menu[key];
+    var re = /^(http|https):\/\/*/gi; 
+    var tar = re.test(value) ? "_blank" : "_self"; 
+    var act = !re.test(value) && "/" + page.current_url === value; %>
+  <li class="nav-list-item">
+    <a
+      href="<%- url_for(value)%>"
+      class="nav-list-link <%= act ? 'active' : '' %>"
+      target="<%- tar %>"
+    >
+      <%= key.toUpperCase() %>
+    </a>
+  </li>
+  <% } %>
+</ul>

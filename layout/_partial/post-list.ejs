@@ -1,0 +1,16 @@
+<ul class="home post-list">
+    <% page.posts.each(function(item) { %>
+    <li class="post-list-item">
+        <article class="post-block">
+            <h2 class="post-title">
+                <a href="<%- url_for(item.path) %>" class="post-title-link"><%= item.title %></a>
+            </h2>
+            <%- partial('post-info', {item: item}) %>
+            <div class="post-content">
+                <%- item.excerpt %>
+            </div>
+            <a href="<%- url_for(item.path) %>" class="read-more">...more</a>
+        </article>
+    </li>
+    <% }) %>
+</ul>
