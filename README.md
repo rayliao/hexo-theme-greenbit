@@ -7,10 +7,9 @@
 ### Install
 
 ```bash
-hexo init Blog
-cd Blog
+hexo init blog
+cd blog
 npm install
-npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
 git clone https://github.com/rayliao/hexo-theme-greenbit.git themes/greenbit
 ```
 
