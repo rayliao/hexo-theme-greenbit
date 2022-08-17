@@ -2,7 +2,7 @@
 
 🌿 A green, pure and nice [Hexo](https://www.hexo.io) theme for a personal blog, base on [apollo](https://github.com/pinggod/hexo-theme-apollo) and [geist-ui](https://github.com/geist-org/geist-ui).
 
-👷 Building...
+🌱 [demo](https://www.rayliao.com/hexo-theme-greenbit/)
 
 ### Install
 
