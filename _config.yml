@@ -3,6 +3,14 @@ menu:
   projects: https://github.com/rayliao
   rss: /atom.xml
 
+logo:
+  enabled: true
+  width: 50
+  height: 50
+  url: /images/logo.png
+
+favicon: /images/favicon.png
+
 # Comment
 # e.g disqus: greenbit
 disqus:

@@ -8,12 +8,17 @@
     <div class="wrap">
       <header>
         <a href="<%- url_for() %>" class="logo">
-          <span class="title">
-            <%- config.title %> 
-          </span>
-          <span class="sub">
-            <%- config.subtitle %> 
-          </span>
+          <% if(theme.logo.enabled) { %> 
+            <img src="<%= url_for(theme.logo.url) %>" width="<%= theme.logo.width %>" height="<%= theme.logo.height %>" /> 
+          <% } %> 
+          <div class="logo-wrap">
+            <span class="title">
+              <%- config.title %> 
+            </span>
+            <span class="sub">
+              <%- config.subtitle %> 
+            </span>
+          </div>
         </a>
         <%- partial('_partial/nav') %>
       </header>
