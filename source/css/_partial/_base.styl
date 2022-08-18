@@ -1,6 +1,3 @@
-$hue = 153
-$secondary-hue = 27
-
 html
   --background-color: #f3f3f2
   --on-background-color: #0d0d0c
@@ -8,16 +5,8 @@ html
   --on-primary-color: #fff
   --primary-hover-color: #71880a
   --light-color: #747474
-  --dark-color: hsl($hue, 53%, 32%)
   --border-color: #dbdbdb
-  --secondary-color: hsl($secondary-hue, 15%, 95%)
-  --on-secondary-normal: hsl($secondary-hue, 5%, 25%)
-  --on-secondary-primary: hsl($secondary-hue, 95%, 45%)
-  --on-secondary-light: hsl($secondary-hue, 5%, 65%)
-
-::selection
-  color: var(--on-background-color)
-  background-color: var(--background-color)
+  --pre-color: #444;
 
 html, body
   width: 100%
@@ -29,7 +18,7 @@ body
   font-size: 14px
   line-height: 1.6
   background-color: var(--background-color)
-  font-family: 'Helvetica Neue', Arial, sans-serif
+  font-family "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
 ul.nav, ul.post-list
   margin: 0
@@ -49,36 +38,10 @@ a.nav-list-link.active, a.nav-list-link:hover
 hr
   border: 0
 
-code
-  margin: 0 2px
-  padding: 3px 5px
-  color: var(--on-secondary-primary)
-  border-radius: 2px
-  white-space: inherit
-
 iframe, video
   max-width: 100%
   margin: 1rem auto
   display: block
-
-table
-  width: 100%
-  margin: 1em auto
-
-  thead
-    background-color: #ddd
-
-    th
-      padding: 5px
-      min-width: 20px
-
-  tbody
-    tr:nth-child(2n)
-      background-color: #eee
-
-    td
-      padding: 5px
-      vertical-align: text-top
 
 .gt-container .gt-header-textarea
   color: #242826

@@ -1,7 +1,7 @@
 {
   "name": "hexo-theme-greenbit",
   "version": "1.0.0",
-  "description": "A hexo theme inspired by vuejs.org",
+  "description": "A green, pure and nice hexo theme for a personal blog",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -17,9 +17,5 @@
   "bugs": {
     "url": "https://github.com/rayliao/hexo-theme-greenbit/issues"
   },
-  "homepage": "https://github.com/rayliao/hexo-theme-greenbit#readme",
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.0.2"
-  }
+  "homepage": "https://github.com/rayliao/hexo-theme-greenbit#readme"
 }

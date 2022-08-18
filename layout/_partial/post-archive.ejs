@@ -14,7 +14,7 @@
     <h2 class="archive-year"><%= year %></h2>
     <% } %>
     <div class="post-item">
-        <%- partial('post-info', {item: item}) %>
+        <span><%= full_date(item.date, 'll') %></span>
         <a href="<%- url_for(item.path) %>" class="post-title-link"><%= item.title %></a>
     </div>
     <% }) %>

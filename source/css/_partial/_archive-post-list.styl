@@ -1,6 +1,5 @@
 .archive
-  max-width 500px
-  margin 3em auto
+  margin 0 auto 20px
 
   .tag-list
     margin 0
@@ -18,7 +17,7 @@
     color var(--primary-color)
 
     &:hover
-      color var(--dark-color)
+      opacity 0.8
 
   .tag-list-count
     top -3px
@@ -26,8 +25,12 @@
     position relative
     margin-left 2px
 
+  .archive-year
+    font-weight normal
+
   .post-item
     padding 2px 0 0 50px
+    display flex
 
   .post-time, .post-title-link
     font-size 1rem
@@ -39,8 +42,7 @@
     word-break break-all
 
     &:hover
-      border-bottom 0
-      color var(--dark-color)
+      text-decoration underline
 
   .post-info
     float left

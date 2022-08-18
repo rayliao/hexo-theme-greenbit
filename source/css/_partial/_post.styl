@@ -1,11 +1,27 @@
 .post
   padding-top 1em
+  .post-tags
+    margin-top 20px
+    display flex
+    gap 10px
+    a
+      background-color var(--primary-color)
+      color var(--on-primary-color)
+      border-radius 2px
+      padding 1px 5px
+      &:hover 
+        background-color var(--primary-hover-color)
 
 .post-block
   .post-title
     margin 0
     margin-bottom 5px
     font-size 22px
+  .post-date
+    margin 0
+    margin-bottom 20px
+    color var(--light-color)
+    font-size 13px
   .post-title-link
     color var(--primary-color)
     &:hover
@@ -39,24 +55,94 @@
 
   h2, h3
     font-size 18px
+  
+  h3, h5
+    font-weight normal
 
-  h4, h5, h6
+  h4, h5
     font-size 16px
+
+  h6
+    font-size 14px
+    font-weight bold
 
   a
     color var(--primary-color)
     word-break break-all
+    &:hover
+      text-decoration underline
 
   blockquote
-    margin 2em 0
-    padding-left 20px
-    border-left 4px solid var(--primary-color)
+    margin 10px 0
+    padding-left 10px
+    border-left 2px solid var(--primary-color)
 
   img
     display block
     max-width 100%
     margin 1em auto
 
+  table
+    width 100%
+    margin 10px 0
+    border-spacing 0
+    th
+      text-align left
+      padding 6px
+      background-color #d4d4d4
+      font-weight normal
+    tbody
+      tr:hover
+        background-color #e2e2e2  
+    td
+      text-align left
+      padding 6px
+      min-height 30px
+      border-bottom 1px solid #e2e2e2
+      
+  code
+    color: #f81ce5;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    white-space: pre-wrap;
+    font-size 13px
+    &:before
+      content: '\`';
+    &:after
+      content: '\`';
+  pre
+    padding 10px
+    border-radius 6px
+    background-color #fff
+    code
+      &:before, &:after
+        content ''
+
+  .highlight
+    position relative
+    margin 1em 0
+    border-radius 2px
+    line-height 1.1em
+    background-color #f8f8f8
+    overflow-x auto
+
+    table, td, tr
+      width 100%
+      border-collapse collapse
+      padding 0
+      margin 0
+      border none
+
+    .gutter
+      display none
+
+    .code pre
+      padding 1.2em 1.4em
+      line-height 1.5em
+      margin 0
+
+      .line
+        width auto
+        height 18px
   .tip
     position relative
     margin 2em 0
@@ -93,40 +179,8 @@
   padding 1em 0
   background-color rgba(0, 0, 0, 0.5)
   z-index 10
-
   #mask-image
     max-width 95%
-
-code, pre
-  font-size 0.8em
-  background-color var(--secondary-color)
-  font-family 'Roboto Mono', Monaco, courier, monospace
-
-.highlight
-  position relative
-  margin 1em 0
-  border-radius 2px
-  line-height 1.1em
-  background-color #f8f8f8
-  overflow-x auto
-
-  table, td, tr
-    width 100%
-    border-collapse collapse
-    padding 0
-    margin 0
-
-  .gutter
-    display none
-
-  .code pre
-    padding 1.2em 1.4em
-    line-height 1.5em
-    margin 0
-
-    .line
-      width auto
-      height 18px
 
 .code-base
   position absolute
@@ -153,8 +207,7 @@ code-signs($signs)
   content 'C++'
 
 pre
-  color var(--on-secondary-normal)
-
+  color var(--pre-color) 
   .constant, .function .keyword
     color #0092db
 
@@ -177,7 +230,7 @@ pre
     color #42b983
 
   .apache .sqbracket, .comment, .doctype, .java .annotation, .pi, .python .decorator, .shebang, .template_comment, .tex .formula
-    color var(--on-secondary-light)
+    color var(--pre-color) 
 
   .deletion
     color #BA4545

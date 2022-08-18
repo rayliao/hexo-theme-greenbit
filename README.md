@@ -1,4 +1,4 @@
-### GreenBit
+### greenbit
 
 A green, pure and nice [hexo](https://www.hexo.io) theme for a personal blog, base on [apollo](https://github.com/pinggod/hexo-theme-apollo) and [geist-ui](https://github.com/geist-org/geist-ui), inspired by [cactus](https://github.com/probberechts/hexo-theme-cactus)
 
