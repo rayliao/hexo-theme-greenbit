@@ -1,8 +1,8 @@
-### greenbit
-
 A green, pure and nice [hexo](https://www.hexo.io) theme for a personal blog, base on [apollo](https://github.com/pinggod/hexo-theme-apollo) and [geist-ui](https://github.com/geist-org/geist-ui), inspired by [cactus](https://github.com/probberechts/hexo-theme-cactus)
 
 🌱 [Demo](https://www.rayliao.com/hexo-theme-greenbit/)
+
+> [Green Bit](https://onepiece.fandom.com/wiki/Green_Bit) is a seemingly uninhabited island in the New World located immediately north of Dressrosa. Law first mentioned the island when he was speaking to Smoker on Punk Hazard. Its underground is home to the Tontatta Kingdom.
 
 ### Install
 
