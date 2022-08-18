@@ -1,4 +1,0 @@
-[submodule "themes/greenbit"]
-	path = themes/greenbit
-	url = git@github.com:rayliao/hexo-theme-greenbit.git
-	branch = main
