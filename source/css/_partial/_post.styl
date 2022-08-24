@@ -112,7 +112,7 @@
   pre
     padding 10px
     border-radius 6px
-    background-color #fff
+    background-color var(--pre-background)
     code
       &:before, &:after
         content ''
@@ -120,9 +120,7 @@
   .highlight
     position relative
     margin 1em 0
-    border-radius 2px
     line-height 1.1em
-    background-color #f8f8f8
     overflow-x auto
 
     table, td, tr
@@ -131,7 +129,8 @@
       padding 0
       margin 0
       border none
-
+    table tbody tr:hover
+      background none
     .gutter
       display none
 

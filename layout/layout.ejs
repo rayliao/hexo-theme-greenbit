@@ -3,28 +3,29 @@
   <head>
     <%- partial('_partial/head') %>
   </head>
-
   <body>
-    <div class="wrap">
-      <header>
+    <header>
+      <div class="wrap">
         <a href="<%- url_for() %>" class="logo">
           <% if(theme.logo.enabled) { %> 
             <img src="<%= url_for(theme.logo.url) %>" width="<%= theme.logo.width %>" height="<%= theme.logo.height %>" /> 
-          <% } %> 
-          <div class="logo-wrap">
-            <span class="title">
-              <%- config.title %> 
-            </span>
-            <span class="sub">
-              <%- config.subtitle %> 
-            </span>
-          </div>
+            <% } %> 
+            <div class="logo-wrap">
+              <span class="title">
+                <%- config.title %> 
+              </span>
+              <span class="sub">
+                <%- config.subtitle %> 
+              </span>
+            </div>
         </a>
         <%- partial('_partial/nav') %>
-      </header>
-      <main class="container">
+      </div>
+    </header>
+    <div class="wrap">
+      <div class="container">
         <%- body %>
-      </main>
+      </div>
       <footer>
         <%- partial('_partial/paginator') %>
         <div class="copyright">
