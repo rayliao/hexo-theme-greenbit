@@ -24,9 +24,12 @@ footer
 
     p, a
       color var(--light-color)
+      line-height 1.1
 
     a:hover
       color var(--primary-color)
 
-#disqus_thread, .ds-thread
-  margin-bottom 2em
+@media screen and (max-width 700px) 
+  footer
+    .copyright
+      padding 0 10px

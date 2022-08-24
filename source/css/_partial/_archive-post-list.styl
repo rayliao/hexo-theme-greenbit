@@ -51,3 +51,16 @@
 
   .post-tag
     display none
+
+@media screen and (max-width 700px)
+  .archive
+    .post-item
+      flex-direction column-reverse
+      padding-left 15px
+      span
+        font-size 12px
+        font-style italic
+        &:before
+          content '- '
+      .post-title-link
+        margin-left 0
