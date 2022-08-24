@@ -29,8 +29,6 @@ This post gives an overview of all Markdown elements and how they are rendered b
   - [Backslash Escapes](#Backslash-Escapes)
 - [Inline HTML](#Inline-Html)
 
-<!-- more -->
-
 ## Block Elements
 
 ### Paragraphs and Line Breaks
