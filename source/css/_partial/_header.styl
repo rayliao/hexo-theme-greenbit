@@ -26,17 +26,65 @@ header
         line-height 1
       .sub
         font-style italic
-
+.menu
+  position fixed
+  width 180px
+  top 0
+  bottom 0
+  right 0
+  z-index 100
+  background-color var(--background-color)
+  transform translate3d(180px, 0, 0)
+  transition transform 0.6s
+  &.menu-anim
+    transform translate3d(0, 0, 0)
+  .menu-handle
+    display none
+    position absolute
+    top 10px
+    left -40px
+    background none
+    border none
+    width 30px
+    height 24px
+    padding 0
+    outline none
+    &:before, &:after, span
+      background-color var(--on-background-color)
+    &:before, &:after
+      content ''
+      position absolute
+      height 2px
+      width 100%
+      left 0
+      top 50%
+      transform-origin 50% 50%
+      transition transform 0.25s
+    &:before
+      transform translate3d(0, -10px, 0)
+    &:after
+      transform translate3d(0, 10px, 0)
+    span
+      position absolute
+      width 100%
+      height 2px
+      left 0
+      overflow hidden
+      text-indent 200%
+      transition opacity 0.25s
   .nav
     display flex
-    align-items center
     gap 15px
-
+    height 100%
+    padding-top 15px
+    flex-direction column
+    justify-content start
+    align-items center
   .nav-list-item
     a
       font-size 18px
 
 @media screen and (max-width 700px) 
-  header
-    .nav
-      display none
+  .menu
+    .menu-handle
+      display block

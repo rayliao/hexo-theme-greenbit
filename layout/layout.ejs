@@ -4,6 +4,7 @@
     <%- partial('_partial/head') %>
   </head>
   <body>
+    <%- partial('_partial/nav') %>
     <header>
       <div class="wrap">
         <a href="<%- url_for() %>" class="logo">
@@ -19,7 +20,6 @@
               </span>
             </div>
         </a>
-        <%- partial('_partial/nav') %>
       </div>
     </header>
     <div class="wrap">
@@ -41,5 +41,17 @@
         </div>
       </footer>
     </div>
+    <script> 
+      (function(){
+        let isOpen = false;
+        const menu = document.getElementById('menu')
+        const handle = menu.querySelector('button.menu-handle')
+        handle.addEventListener('click', function() {
+          menu.classList.toggle('menu-anim')
+          setTimeout(function() { menu.classList.toggle('menu-open') }, 250)
+          isOpen = !isOpen
+        })
+      })()
+    </script>
   </body>
 </html>
