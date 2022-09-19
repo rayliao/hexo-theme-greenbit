@@ -5,41 +5,43 @@
   </head>
   <body>
     <%- partial('_partial/nav') %>
-    <header>
-      <div class="wrap">
-        <a href="<%- url_for() %>" class="logo">
-          <% if(theme.logo.enabled) { %> 
-            <img src="<%= url_for(theme.logo.url) %>" width="<%= theme.logo.width %>" height="<%= theme.logo.height %>" /> 
-            <% } %> 
-            <div class="logo-wrap">
-              <span class="title">
-                <%- config.title %> 
-              </span>
-              <span class="sub">
-                <%- config.subtitle %> 
-              </span>
-            </div>
-        </a>
-      </div>
-    </header>
-    <div class="wrap">
-      <div class="container">
-        <%- body %>
-      </div>
-      <footer>
-        <%- partial('_partial/paginator') %>
-        <div class="copyright">
-          <% 
-            var greenbitURL = "https://github.com/rayliao/hexo-theme-greenbit";
-            var currentDate = new Date();
-            var year = currentDate.getFullYear();
-            year = year == theme.startyear ? year : theme.startyear + ' - ' + year; %>
-          <p>
-            © <%= year %> powered by <a href="https://hexo.io/" target="_blank">hexo</a> and
-            <a href="<%- greenbitURL %>" target="_blank">hexo-theme-greenbit</a>.
-          </p>
+    <div class="main">
+      <header>
+        <div class="wrap">
+          <a href="<%- url_for() %>" class="logo">
+            <% if(theme.logo.enabled) { %> 
+              <img src="<%= url_for(theme.logo.url) %>" width="<%= theme.logo.width %>" height="<%= theme.logo.height %>" /> 
+              <% } %> 
+              <div class="logo-wrap">
+                <span class="title">
+                  <%- config.title %> 
+                </span>
+                <span class="sub">
+                  <%- config.subtitle %> 
+                </span>
+              </div>
+          </a>
         </div>
-      </footer>
+      </header>
+      <div class="wrap">
+        <div class="container">
+          <%- body %>
+        </div>
+        <footer>
+          <%- partial('_partial/paginator') %>
+          <div class="copyright">
+            <% 
+              var greenbitURL = "https://github.com/rayliao/hexo-theme-greenbit";
+              var currentDate = new Date();
+              var year = currentDate.getFullYear();
+              year = year == theme.startyear ? year : theme.startyear + ' - ' + year; %>
+            <p>
+              © <%= year %> powered by <a href="https://hexo.io/" target="_blank">hexo</a> and
+              <a href="<%- greenbitURL %>" target="_blank">hexo-theme-greenbit</a>.
+            </p>
+          </div>
+        </footer>
+      </div>
     </div>
     <script> 
       (function(){
@@ -47,8 +49,7 @@
         const menu = document.getElementById('menu')
         const handle = menu.querySelector('button.menu-handle')
         handle.addEventListener('click', function() {
-          menu.classList.toggle('menu-anim')
-          setTimeout(function() { menu.classList.toggle('menu-open') }, 250)
+          menu.classList.toggle('menu-open')
           isOpen = !isOpen
         })
       })()
